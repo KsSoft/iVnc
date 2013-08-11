@@ -1,0 +1,188 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<com.mk.imVNC.VncCanvas
+    android:id="@+id/vnc_canvas"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom|center"
+    >
+</com.mk.imVNC.VncCanvas>
+  
+<com.mk.android.zoomer.ZoomControls
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/zoomer"
+    android:layout_gravity="center|right"
+    android:padding="10sp"
+/>
+
+<ImageButton android:id="@+id/keyStow"
+	android:background="@drawable/showkeys"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"
+    android:visibility="gone"
+    android:padding="10sp"
+    />
+
+<RelativeLayout 
+    android:id="@+id/singleHandOpts"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:visibility="gone"
+	android:padding="0dip"
+	>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+   		android:orientation="vertical"
+		android:padding="0dip"
+		>
+		<LinearLayout 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:layout_gravity="top|center"
+	   		android:orientation="horizontal"
+			android:paddingBottom="10sp"
+			>
+			<ImageButton android:id="@+id/singleDrag"
+		        android:background="@drawable/single_left"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+			<ImageButton android:id="@+id/singleMiddle"
+		        android:background="@drawable/single_middle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+			<ImageButton android:id="@+id/singleRight"
+		        android:background="@drawable/single_right"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+		</LinearLayout>
+		<LinearLayout 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:layout_gravity="bottom|center"
+	   		android:orientation="horizontal"
+			android:padding="0dip"
+			>
+			<ImageButton android:id="@+id/singleScroll"
+		        android:background="@drawable/single_scroll"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+			<ImageButton android:id="@+id/singleZoom"
+		        android:background="@drawable/single_zoom"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+			<ImageButton android:id="@+id/singleCancel"
+		        android:background="@drawable/single_cancel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>
+
+<RelativeLayout 
+    android:id="@+id/layoutKeys"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:layout_gravity="bottom|center"
+	android:visibility="gone"
+	android:paddingBottom="2dip"
+	>
+	<LinearLayout 
+	    android:id="@+id/layoutMetaKeys"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		android:orientation="vertical"
+		android:padding="0sp"
+		>
+		<ImageButton android:id="@+id/keyTab"
+	        android:background="@drawable/taboff"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="top|left"
+	        />
+		<LinearLayout 
+		    android:id="@+id/layoutCtrlAltKeys"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="0sp"
+			>
+			<ImageButton android:id="@+id/keyCtrl"
+		        android:background="@drawable/ctrloff"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+			<ImageButton android:id="@+id/keySuper"
+		        android:background="@drawable/superoff"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+			<ImageButton android:id="@+id/keyAlt"
+		        android:background="@drawable/altoff"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+		</LinearLayout>
+	</LinearLayout>
+			
+	<LinearLayout 
+	    android:id="@+id/layoutArrowKeys"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:orientation="vertical"
+		android:padding="0sp"
+		>
+		<ImageButton android:id="@+id/keyUpArrow"
+	        android:background="@drawable/upoff"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="top|center"
+	        />
+		<LinearLayout 
+		    android:id="@+id/layoutArrowKeys"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+		    android:layout_gravity="bottom|center"
+			android:padding="0sp"
+			>
+			<ImageButton android:id="@+id/keyLeftArrow"
+		        android:background="@drawable/leftoff"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+			<ImageButton android:id="@+id/keyDownArrow"
+		        android:background="@drawable/downoff"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+			<ImageButton android:id="@+id/keyRightArrow"
+		        android:background="@drawable/rightoff"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        />
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>
+
+</FrameLayout>
