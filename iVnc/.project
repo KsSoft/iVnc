@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>iVNC 2.0</name>
+	<name>iVnc</name>
 	<comment></comment>
 	<projects>
 		<project>FreeRDPCore</project>

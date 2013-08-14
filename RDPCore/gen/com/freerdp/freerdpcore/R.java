@@ -446,7 +446,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:bounds_default
+          @attr name com.freerdp.freerdpcore:bounds_default
         */
         public static final int IntEditTextPreference_bounds_default = 2;
         /**
@@ -460,7 +460,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:bounds_max
+          @attr name com.freerdp.freerdpcore:bounds_max
         */
         public static final int IntEditTextPreference_bounds_max = 1;
         /**
@@ -474,7 +474,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:bounds_min
+          @attr name com.freerdp.freerdpcore:bounds_min
         */
         public static final int IntEditTextPreference_bounds_min = 0;
     };
