@@ -20,18 +20,18 @@ public final class R {
 		public static final int btn_zoom_up_normal = 0x7f02000d;
 		public static final int btn_zoom_up_pressed = 0x7f02000e;
 		public static final int btn_zoom_up_selected = 0x7f02000f;
-		public static final int ic_keyboard = 0x7f020018;
+		public static final int ic_keyboard = 0x7f020019;
 	}
 	public static final class id {
-		public static final int zoomIn = 0x7f09008a;
-		public static final int zoomKeys = 0x7f090089;
-		public static final int zoomOut = 0x7f090088;
+		public static final int zoomIn = 0x7f0c00a6;
+		public static final int zoomKeys = 0x7f0c00a5;
+		public static final int zoomOut = 0x7f0c00a4;
 	}
 	public static final class layout {
-		public static final int zoom_controls = 0x7f03000e;
+		public static final int zoom_controls = 0x7f030017;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f040001;
-		public static final int hello = 0x7f040000;
+		public static final int app_name = 0x7f080072;
+		public static final int hello = 0x7f080071;
 	}
 }
